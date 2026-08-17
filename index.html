@@ -160,6 +160,21 @@
     transition:background .15s, transform .15s;
   }
   .btn-primary:hover{background:#57CBF2;transform:translateY(-1px);}
+  .btn-outline{
+    display:inline-flex;align-items:center;gap:10px;
+    background:transparent;
+    color:var(--celeste);
+    font-weight:600;
+    font-size:.95rem;
+    padding:13px 24px;
+    border-radius:8px;
+    border:1px solid var(--celeste-deep);
+    transition:background .15s, border-color .15s, transform .15s;
+  }
+  .btn-outline:hover{background:rgba(56,189,240,.08);border-color:var(--celeste);transform:translateY(-1px);}
+  .contact-actions{
+    display:flex;gap:16px;flex-wrap:wrap;justify-content:center;
+  }
   .coverage{
     font-family:var(--font-mono);
     font-size:.8rem;
@@ -367,7 +382,10 @@
 <section id="contacto" class="contact">
   <h2>¿Querés proteger tu casa o tu negocio?</h2>
   <p>Contame qué necesitás y te respondo por WhatsApp con un presupuesto.</p>
-  <a class="btn-primary" href="https://wa.me/5493446210952?text=Hola%2C%20quiero%20consultar%20por%20una%20instalaci%C3%B3n" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+  <div class="contact-actions">
+    <a class="btn-primary" href="https://wa.me/5493446210952?text=Hola%2C%20quiero%20consultar%20por%20una%20instalaci%C3%B3n" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    <a class="btn-outline" href="https://g.page/r/CdIPuKbEfMMEEBM/review" target="_blank" rel="noopener">Dejar una reseña ⭐</a>
+  </div>
 </section>
 
 <footer>
